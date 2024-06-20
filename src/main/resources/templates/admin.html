@@ -32,10 +32,10 @@
 
 </header>
 
-<div class="container-fluid bg-light  rounded">
-    <div class="row">
-        <div class="col-2 mt-3 bg-white rounded">
-            <ul class="nav flex-sm-column">
+<div class="container-fluid bg-light">
+    <div class="row ">
+        <div class="col-md-2 px-0">
+            <ul class="nav flex-sm-column bg-white min-vh-100">
                 <li class="nav-item">
                     <a class="nav-link rounded"
                        th:classappend="${'active bg-primary text-white'}"
@@ -117,9 +117,11 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="container col-8">
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="id-edit"
-                                                                           class="fw-bold text-center">ID</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        ID </strong> </b> </label>
                                                                     <input type="text" id="id-edit"
                                                                            class="form-control"
                                                                            readonly
@@ -127,10 +129,12 @@
                                                                            th:value="${user.id}">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="firstName-edit"
-                                                                           class="fw-bold text-center">First
-                                                                        Name</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        First
+                                                                        Name </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="firstName-edit"
                                                                            class="form-control"
@@ -139,9 +143,11 @@
                                                                            placeholder="firstName">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="lastName-edit"
-                                                                           class="fw-bold text-center">Last Name</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Last Name </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="lastName-edit"
                                                                            class="form-control"
@@ -149,9 +155,11 @@
                                                                            th:value="${user.lastName}">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="age-edit"
-                                                                           class="fw-bold text-center">Last Name</label>
+                                                                           class="fw-bold text-center"> <b> <strong>Last
+                                                                        Name </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="age-edit"
                                                                            class="form-control"
@@ -159,9 +167,11 @@
                                                                            th:value="${user.age}">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="email-edit"
-                                                                           class="fw-bold text-center">Email</label>
+                                                                           class="fw-bold text-center"> <b> <strong>Email </strong>
+                                                                    </b> </label>
                                                                     <input type="email"
                                                                            id="email-edit"
                                                                            class="form-control"
@@ -169,21 +179,25 @@
                                                                            th:value="${user.email}">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="password-edit"
-                                                                           class="fw-bold text-center">Password</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Password </strong> </b> </label>
                                                                     <input type="password"
                                                                            id="password-edit"
                                                                            class="form-control"
                                                                            th:name="password"
                                                                            th:value="${user.password}">
                                                                 </div>
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="role-edit"
-                                                                           class="fw-bold text-center">Role</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Role </strong> </b> </label>
                                                                     <select id="role-edit"
-                                                                            class="form-select"
                                                                             multiple
+                                                                            class="form-control"
                                                                             th:name="roles"
                                                                             th:size="${#sets.size(roles)}">
                                                                         <option
@@ -202,7 +216,8 @@
                                                                     Close
                                                                 </button>
                                                                 <button type="submit"
-                                                                        class="btn btn-primary">Edit
+                                                                        class="btn btn-primary">
+                                                                    Edit
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -235,9 +250,11 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="container col-8">
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4 text-center"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="id-delete"
-                                                                           class="fw-bold text-center">ID</label>
+                                                                           class="fw-bold"> </label> <b> <strong>
+                                                                    ID </strong> </b>
                                                                     <input type="text"
                                                                            id="id-delete"
                                                                            class="form-control"
@@ -246,10 +263,12 @@
                                                                            th:value="${user.id}">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="firstName-delete"
-                                                                           class="fw-bold text-center">First
-                                                                        Name</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        First
+                                                                        Name </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="firstName-delete"
                                                                            class="form-control"
@@ -259,9 +278,11 @@
                                                                            placeholder="First Name">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="lastName-delete"
-                                                                           class="fw-bold text-center">Last Name</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Last Name </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="lastName-delete"
                                                                            class="form-control"
@@ -271,9 +292,11 @@
                                                                            placeholder="Last Name">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="age-delete"
-                                                                           class="fw-bold text-center">Age</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Age </strong> </b> </label>
                                                                     <input type="text"
                                                                            id="age-delete"
                                                                            class="form-control"
@@ -283,9 +306,11 @@
                                                                            placeholder="Age">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="email-delete"
-                                                                           class="fw-bold text-center">Email</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Email </strong> </b> </label>
                                                                     <input type="email"
                                                                            id="email-delete"
                                                                            class="form-control"
@@ -295,9 +320,11 @@
                                                                            placeholder="Email">
                                                                 </div>
 
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="password-delete"
-                                                                           class="fw-bold text-center">Password</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Password </strong> </b> </label>
                                                                     <input type="password"
                                                                            id="password-delete"
                                                                            class="form-control"
@@ -306,12 +333,14 @@
                                                                            th:value="${user.password}"
                                                                            placeholder="Password">
                                                                 </div>
-                                                                <div class="row mb-4">
+                                                                <div class="row mb-4"
+                                                                     style="display:flex;justify-content:center;">
                                                                     <label for="role-delete"
-                                                                           class="fw-bold text-center">Role</label>
+                                                                           class="fw-bold text-center"> <b> <strong>
+                                                                        Role </strong> </b> </label>
                                                                     <select id="role-delete"
-                                                                            class="form-select"
                                                                             multiple
+                                                                            class="form-control"
                                                                             th:name="roles"
                                                                             th:disabled="disabled"
                                                                             th:size="${#sets.size(roles)}">
@@ -362,28 +391,32 @@
                                               th:action="@{/admin/new}"
                                               th:object="${newUser}">
                                             <div class="mb-3">
-                                                <label for="firstName" class="form-label">First Name</label>
+                                                <label for="firstName" class="form-label"> <b> <strong> First
+                                                    Name </strong> </b> </label>
                                                 <input name="firstName" type="text"
                                                        class="form-control" id="firstName"
                                                        th:field="*{firstName}"
                                                        placeholder="First Name">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="lastName" class="form-label">Last Name</label>
+                                                <label for="lastName" class="form-label"> <b> <strong> Last
+                                                    Name </strong> </b> </label>
                                                 <input name="lastName" type="text"
                                                        class="form-control" id="lastName"
                                                        th:field="*{lastName}"
                                                        placeholder="Last Name">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="age" class="form-label">Age</label>
+                                                <label for="age" class="form-label"> <b> <strong> Age </strong> </b>
+                                                </label>
                                                 <input name="age" type="text"
                                                        class="form-control" id="age"
                                                        th:field="*{age}"
                                                        placeholder="Age">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="email" class="form-label">Email</label>
+                                                <label for="email" class="form-label"> <b> <strong> Email </strong> </b>
+                                                </label>
                                                 <input name="email" type="email" class="form-control"
                                                        id="email"
                                                        th:field="*{email}"
@@ -391,16 +424,17 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="password"
-                                                       class="form-label">Password</label>
+                                                       class="form-label"> <b> <strong> Password </strong> </b> </label>
                                                 <input name="password" type="password"
                                                        class="form-control"
                                                        id="password" th:field="*{password}"
                                                        placeholder="Password">
                                             </div>
                                             <div>
-                                                <label for="roles" class="form-label">Role</label>
-                                                <select class="form-select" name="roles" size="2"
-                                                        id="roles" multiple
+                                                <label for="roles" class="form-label"> <b> <strong> Role </strong> </b>
+                                                </label>
+                                                <select id="roles" multiple class="form-control" name="roles" size="2"
+
                                                         th:field="*{roles}">
                                                     <option th:each="role : ${roles}"
                                                             th:value="${role.id}"

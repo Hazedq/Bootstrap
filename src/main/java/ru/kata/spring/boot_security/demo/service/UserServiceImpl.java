@@ -35,12 +35,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     @Transactional(readOnly = true)
-    public User findById(long id) {
-        return userRepository.getById(id);
-    }
-
-    @Override
-    @Transactional(readOnly = true)
     public List<User> findAll() {
         return userRepository.findAll();
     }
@@ -59,6 +53,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    @Transactional
     public void adminRedactor(User user, Long id) {
         Optional<User> optionalUser = userRepository.findById(id);
         if (optionalUser.isPresent()) {
